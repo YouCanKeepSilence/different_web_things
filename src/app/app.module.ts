@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { PainterComponent } from './painter/painter.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-import {MzButtonModule} from 'ngx-materialize';
+import {MzButtonModule, MzNavbarModule} from 'ngx-materialize';
 import { SorterComponent } from './sorter/sorter.component';
 import { FirebaseCallerComponent } from './firebase-caller/firebase-caller.component';
 
@@ -20,7 +20,8 @@ import { FirebaseCallerComponent } from './firebase-caller/firebase-caller.compo
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MzButtonModule
+    MzButtonModule,
+    MzNavbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
