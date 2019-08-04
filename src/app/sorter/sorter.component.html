@@ -1,0 +1,21 @@
+<div class="container">
+  <div class="row">
+    <div class="col s12" style="margin-top: 1rem;">
+      <mz-progress [ngClass]="{'hide': !loading}"></mz-progress>
+    </div>
+  </div>
+  <div *ngIf="elapsedTime" class="row">
+    <div class="col s12">
+      <p>Elapsed time to sort: {{elapsedTime}} sec.</p>
+      <p>{{description}}</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s4">
+      <button mz-button (click)="sortWithWorker()" [disabled]="loading">Sort with worker</button>
+    </div>
+    <div class="col s4">
+      <button mz-button (click)="sortWithoutWorker()" [disabled]="loading">Sort without worker</button>
+    </div>
+  </div>
+</div>
